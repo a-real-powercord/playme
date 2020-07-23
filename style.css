@@ -1416,7 +1416,13 @@ ul {
   -moz-box-shadow: -9px -2px 88px -14px rgba(0,0,0,0.75);
   box-shadow: -9px -2px 88px -14px rgba(0,0,0,0.75);
   display: none;
+  backdrop-filter: blur(15px);
 
 }
 
+.login-background{
+  background-image: url("img/bg-img/login-bg.jpg");
+  height: 100%;
+  width: 100%;
+}
 

@@ -220,7 +220,6 @@ function searchDiv() {
     var loginbox = document.getElementById("loginbox");
     if (loginbox.style.display === "none") {
         loginbox.style.display = "block";
-        document.getElementById("blur100").style.filter = "blur(40px)"
     } else {
         loginbox.style.display = "none";
     }

@@ -47,7 +47,6 @@
                 </div>
         </div>
     </div>
-    <div id="blur100">
 
     <!-- Preloader -->
     <div id="preloader">
