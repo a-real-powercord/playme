@@ -34,22 +34,28 @@
         <!-- Single Welcome Slide -->
         <div class="welcome-welcome-slide bg-img bg-overlay" style="background-image: url(img/bg-img/3.jpg);">
             <div class="login-box middle">
-            <div class="login">
-            <h1>Login</h1>
-            <form action="php/authenticate.php" method="post">
-                <label for="username">
-                    <i class="fas fa-user"></i>
-                </label>
-                <input type="text" name="username" placeholder="Username" id="username" required>
-                <label for="password">
-                    <i class="fas fa-lock"></i>
-                </label>
-                <input type="password" name="password" placeholder="Password" id="password" required>
-                <input type="submit" value="Login">
-            </form>
-            <h3>Not Registered? Click <a href="register-page.php">HERE</a></h3>
-        </div>
-            </div>
+            <div class="register">
+			<h1>Register</h1>
+			<form action="php/register_auth.php" method="post" autocomplete="off">
+				<label for="username">
+					<i class="fas fa-user"></i>
+				</label>
+				<input type="text" name="username" placeholder="Username" id="username" required>
+				<label for="password">
+					<i class="fas fa-lock"></i>
+				</label>
+				<input type="password" name="password" placeholder="Password" id="password" required>
+				<label for="email">
+					<i class="fas fa-envelope"></i>
+				</label>
+				<input type="email" name="email" placeholder="Email" id="email" required>
+
+				<input type="text" name="permissions" placeholder="Permissions Level" id="permissions" required>
+				<input type="submit" value="Register">
+				
+			</form>
+			<h3>Already Registered? Click <a href="login-page.php">HERE</a></h3>
+		</div>
             
 
         </div>
