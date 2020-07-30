@@ -26,28 +26,6 @@
 </head>
 
 <body>
-    <div class="login-box middle" id="loginbox">
-        <div class="login">
-        <div class="heading">
-            <h2>Sign in</h2>
-            <form action="#">
-
-            <div class="input-group input-group-lg">
-                <span class="input-group-addon"><i class="fa fa-user"></i></span>
-                <input type="text" class="form-control" placeholder="Username or email">
-                </div>
-
-                <div class="input-group input-group-lg">
-                <span class="input-group-addon"><i class="fa fa-lock"></i></span>
-                <input type="password" class="form-control" placeholder="Password">
-                </div>
-
-                <button type="submit" class="float">Login</button>
-            </form>
-                </div>
-        </div>
-    </div>
-
     <!-- Preloader -->
     <div id="preloader">
         <div class="preloader-thumbnail">
@@ -61,67 +39,7 @@
     <header class="header-area">
         <!-- Main Header Start -->
         <div class="main-header-area">
-            <div class="classy-nav-container breakpoint-off">
-                <!-- classy Menu -->
-                <nav class="classy-navbar justify-content-between" id="playmeNav">
-
-                    <!-- Logo -->
-                    <a class="nav-brand" href="index.html"><img src="./img/core-img/logo.png" alt=""></a>
-
-                    <!-- Navbar Toggler -->
-                    <div class="classy-navbar-toggler">
-                        <span class="navbarToggler"><span></span><span></span><span></span></span>
-                    </div>
-
-                    <!-- Menu -->
-                    <div class="classy-menu">
-                        
-
-                        <!-- Menu Close Button -->
-                        <div class="classycloseIcon">
-                            <div class="cross-wrap"><span class="top"></span><span class="bottom"></span></div>
-                        </div>
-
-                        <!-- Nav Start -->
-                        <div class="classynav">
-                            <ul id="nav">
-                            
-                                <li class="current-item"><a href="./index.html">Home</a></li>
-                                <li><a href="">Songs</a></li>
-                                <li>
-                                    <a href="#">Pages</a>
-                                    <ul class="dropdown">
-                                        <li><a href="./index.html">- Home</a></li>
-                                        <li><a href="./music-list.html">- Song List</a></li>
-                                        <li><a href="">- Song List 2</a></li>
-                                        <li><a href="">- Contact</a></li>
-                                        <li><a >- Login</a></li>
-                                        <li><a href="">- music Details</a></li>
-                                        <li><a href="">- Contact</a></li>
-                                    </ul>
-                                </li>
-                                <li><a href="">Contact</a></li>
-                                <li><a onclick="login_button()">Login</a></li>
-                            </ul>
-
-                            <!-- Top Search Area -->
-                            <div class="top-search-area">
-                                <form action="index.html" method="post">
-                                    <input type="search" name="top-search-bar" class="form-control" placeholder="Search and hit enter...">
-                                    <button type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
-                                </form>
-                            </div>
-
-                            <!-- Top Social Area -->
-                            <div class="top-social-area">
-                                <a href="#" class="fa fa-youtube-play" aria-hidden="true"></a>
-                            </div>
-
-                        </div>
-                        <!-- Nav End -->
-                    </div>
-                </nav>
-            </div>
+            <?php require('nav.php') ?>
         </div>
     </header>
     <!-- ***** Header Area End ***** -->

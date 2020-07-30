@@ -3,7 +3,6 @@
 
 <head>
     <?php require('connect.php') ?>
-    <?php session_start(); ?>
   <meta charset="UTF-8">
   <meta name="description" content="PlayMe- Your Music and Podcast Destination">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -50,7 +49,7 @@
             <div class="col-12">
               <!-- Welcome Text -->
               <div class="welcome-text">
-                <h2 data-animation="fadeInUp" data-delay="100ms">Welcome</h2>
+                <h2 data-animation="fadeInUp" data-delay="100ms">Welcome <?php echo $_SESSION['username']?></h2>
                 <h5 data-animation="fadeInUp" data-delay="300ms">Roses - St JHN's newest release has racked up over 20,000,000 plays in the last month.</h5>
               </div>
               <!-- Welcome Music Area -->

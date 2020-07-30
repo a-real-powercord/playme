@@ -27,16 +27,29 @@
 </head>
 </html>
 <body>
+      <!-- Preloader -->
+  <div id="preloader">
+    <div class="preloader-thumbnail">
+      <img src="./img/core-img/preloader.png" alt="">
+    </div>
+  </div>
 
-        <!-- Welcome Slides -->
+  
+
 
 
         <!-- Single Welcome Slide -->
         <div class="welcome-welcome-slide bg-img bg-overlay" style="background-image: url(img/bg-img/3.jpg);">
             <div class="login-box middle">
             <div class="login">
+            <div id="loginloader">
+                <div class="loginloader-thumbnail">
+                <img src="./img/core-img/preloader.png" alt="">
+                </div>
+            </div>
             <h1>Login</h1>
-            <form action="php/authenticate.php" method="post">
+            <div class='login-error' id='login-error'></div>
+            <form action="php/authenticate.php" method="post" id="login-bs"> 
                 <label for="username">
                     <i class="fas fa-user"></i>
                 </label>
@@ -67,4 +80,6 @@
   <!-- All js -->
   <script src="js/playme.bundle.js"></script>
   <!-- Active js -->
+  
+  <script src="js/login-ajax.js"></script>
   <script src="js/default-assets/active.js"></script>

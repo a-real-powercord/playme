@@ -40,7 +40,14 @@
                     </ul>
                 </li>
                 <li><a href="">Contact</a></li>
-                <li><a href="">Login</a></li>
+                <?php if(!isset($_SESSION['loggedin'])){?>
+                <li><a href="login-page.php">Login</a></li>
+                <?php }
+                else{
+                
+                ?>
+                  <li><a href="php/logout.php">Logout</a></li>
+                <?php } ?>
               </ul>
 
               <!-- Top Search Area -->
