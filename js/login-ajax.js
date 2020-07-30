@@ -12,7 +12,6 @@ $(function(){
                     location="music-list.php"
                 }
                 else{
-                    alert('login falied bitch')
                     $('#login-error').html(data)
                     $('#login-error').show()
                     $('#loginloader').hide()
@@ -22,3 +21,15 @@ $(function(){
         })
     })
 })
+
+
+$(function(){
+    $('logout-bs').click(function(e){
+        e.preventDefault();
+        $.ajax({
+            url: 'php/logout.php'
+        },
+        )
+        
+    }
+}

@@ -40,7 +40,7 @@
                     </ul>
                 </li>
                 <li><a href="">Contact</a></li>
-                <?php if(!isset($_SESSION['loggedin'])){?>
+                <?php if(isset($_SESSION['loggedin'])){?>
                 <li><a href="login-page.php">Login</a></li>
                 <?php }
                 else{

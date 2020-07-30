@@ -207,10 +207,10 @@ https://github.com/imakewebthings/jquery-waypoints/blob/master/licenses.txt
 
 function searchDiv() {
     var search_bar = document.getElementById("search-bar");
-    if (search_bar.style.display === "none") {
-      search_bar.style.display = "block";
-    } else {
+    if (search_bar.style.display === "block") {
       search_bar.style.display = "none";
+    } else {
+      search_bar.style.display = "block";
     }
   }
 
