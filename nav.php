@@ -5,7 +5,7 @@
         <nav class="classy-navbar justify-content-between" id="playmeNav">
 
           <!-- Logo -->
-          <a class="nav-brand" href="index.html"><img src="./img/core-img/logo.png" alt=""></a>
+          <a class="nav-brand" href="index.php"><img src="./img/core-img/logo.png" alt=""></a>
 
           <!-- Navbar Toggler -->
           <div class="classy-navbar-toggler">
@@ -40,7 +40,7 @@
                     </ul>
                 </li>
                 <li><a href="">Contact</a></li>
-                <?php if(isset($_SESSION['loggedin'])){?>
+                <?php if(!isset($_SESSION['loggedin'])){?>
                 <li><a href="login-page.php">Login</a></li>
                 <?php }
                 else{

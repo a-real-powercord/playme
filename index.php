@@ -49,11 +49,11 @@
             <div class="col-12">
               <!-- Welcome Text -->
               <div class="welcome-text">
-                <h2 data-animation="fadeInUp" data-delay="100ms">Welcome <?php echo $_SESSION['username']?></h2>
+                <h2 data-animation="fadeInUp" data-delay="100ms">Welcome {username}</h2>
                 <h5 data-animation="fadeInUp" data-delay="300ms">Roses - St JHN's newest release has racked up over 20,000,000 plays in the last month.</h5>
               </div>
               <!-- Welcome Music Area -->
-              <div class="playme-music-area mt-100 d-flex align-items-center flex-wrap" data-animation="fadeInUp" data-delay="900ms">
+              <div class="playme-music-area mt-100 d-flex align-items-center flex-wrap top-player" data-animation="fadeInUp" data-delay="900ms">
                 <div class="playme-music-thumbnail">
                   <img src="./img/album-img/SAINt_JHN_-_Roses_Imanbek_Remix_SAINt_JHN.jpg" alt="">
                 </div>
