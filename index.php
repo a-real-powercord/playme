@@ -1,6 +1,6 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
-
+<?php session_start() ?>
 <head>
     <?php require('connect.php') ?>
   <meta charset="UTF-8">

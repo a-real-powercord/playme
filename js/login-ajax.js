@@ -24,12 +24,12 @@ $(function(){
 
 
 $(function(){
-    $('logout-bs').click(function(e){
+    $('#logout-bs').click(function(e){
         e.preventDefault();
         $.ajax({
             url: 'php/logout.php'
-        },
+        }
         )
         
-    }
-}
+    })
+})

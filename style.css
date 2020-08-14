@@ -1403,13 +1403,22 @@ ul {
 
 }
 
-.middle {
-  position: fixed;
-  bottom: 40%;
-  left: 40%;
+.background-image {
+  background-image:  url("/playme-master/playme/img/bg-img/3.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
 }
 
-
+.middle {
+  height: 500px;
+  left: 50%;
+  margin-top: -250px;
+  margin-left: -200px;
+  position: absolute;
+  top: 50%;
+  width: 400px;
+}
 
 
 .login-background{

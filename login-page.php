@@ -39,7 +39,7 @@
 
 
         <!-- Single Welcome Slide -->
-        <div class="welcome-welcome-slide bg-img bg-overlay" style="background-image: url(img/bg-img/3.jpg);">
+        <div class="background-image">
             <div class="login-box middle">
             <div class="login">
             <div id="loginloader">
@@ -66,10 +66,7 @@
             
 
         </div>
-
-        
-
-        </div>
+</div>
 </body>
 <!-- jQuery js -->
 <script src="js/jquery.min.js"></script>
