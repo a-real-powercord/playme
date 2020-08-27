@@ -1,6 +1,11 @@
-<!-- NAVIGATION -->
+<?php 
+if( session_id() == ""){
+  session_start();
+}
 
-<div class="classy-nav-container breakpoint-off">
+ ?>
+<!-- NAVIGATION -->
+ <div class="classy-nav-container breakpoint-off">
         <!-- classy Menu -->
         <nav class="classy-navbar justify-content-between" id="playmeNav">
 
@@ -25,21 +30,27 @@
             <div class="classynav">
               <ul id="nav">
               <h4 id="insert-peen" class="now-playing"></h4>
-                <li class="current-item"><a href="./index.html">Home</a></li>
-                <li><a href="">Songs</a></li>
+                <li class="current-item"><a href="./index.php">Home</a></li>
+                <li><a href="./music-list.php">Songs</a></li>
                 <li>
                     <a href="#">Pages</a>
                     <ul class="dropdown">
-                        <li><a href="./index.html">- Home</a></li>
-                        <li><a href="./music-list.html">- Song List</a></li>
-                        <li><a href="">- Song List 2</a></li>
+                        <li><a href="./index.php">- Home</a></li>
+                        <li><a href="./music-list.php">- Song List</a></li>
+                        <li><a href="">- Home</a></li>
                         <li><a href="">- Contact</a></li>
                         <li><a href="">- Login</a></li>
-                        <li><a href="">- music Details</a></li>
+                        <li><a href="">- Music Details</a></li>
                         <li><a href="">- Contact</a></li>
                     </ul>
                 </li>
                 <li><a href="">Contact</a></li>
+                <?php if(isset($_SESSION['id'])){if($_SESSION['id'] == 1){?>
+                <li><a href="users.php">User List</a></li>
+                <?php }}
+                else{
+                ?>
+                <?php } ?>
                 <?php if(!isset($_SESSION['loggedin'])){?>
                 <li><a href="login-page.php">Login</a></li>
                 <?php }

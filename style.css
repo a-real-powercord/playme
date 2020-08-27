@@ -1520,7 +1520,7 @@ background-color: #2868c7;
   width: 50px;
  height: 50px;
   background-color: --blue;
-  color: #ffffff;
+  color: #4a31da;
 }
 .register form input[type="password"], .register form input[type="text"], .register form input[type="email"] {
   width: 310px;
@@ -1578,3 +1578,7 @@ background-color: #2868c7;
     max-width: 50px;
     -webkit-animation: playmerotate linear 1s infinite;
     animation: playmerotate linear 1s infinite; }
+
+.total-duration{
+  text-align: center;
+}
