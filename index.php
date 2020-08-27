@@ -49,7 +49,7 @@
             <div class="col-12">
               <!-- Welcome Text -->
               <div class="welcome-text">
-                <h2 data-animation="fadeInUp" data-delay="100ms">Welcome {username}</h2>
+                <h2 data-animation="fadeInUp" data-delay="100ms">Welcome <?php if(isset($_SESSION['name'])){echo $_SESSION['name'];} ?></h2>
                 <h5 data-animation="fadeInUp" data-delay="300ms">Roses - St JHN's newest release has racked up over 20,000,000 plays in the last month.</h5>
               </div>
               <!-- Welcome Music Area -->
@@ -66,7 +66,7 @@
                   <!-- Music Player -->
                   <div class="playme-music-player">
                     <audio preload="auto" controls>
-                      <source src="audio/SAINt_JHN_-_Roses_Imanbek_Remix_SAINt_JHN.mp3">
+                      <source src="audio/Roses - Imanbek Remix.mp3">
                     </audio>
                   </div>                  
                 </div>
@@ -180,7 +180,7 @@
             <div class="playme-music-content text-center">
               <h2><?php echo $song_name ?></h2>
               <div class="music-meta-data">
-                <p>By <a href="#" class="music-author"><?php echo $artist ?></a> | <a href="#" class="music-catagory"><?php echo $genre ?></a> | <a href="#" class="music-duration">00:02:56</a></p>
+                <p>By <a href="#" class="music-author"><?php echo $artist ?></a> | <a href="#" class="music-catagory"><?php echo $genre ?></a></p>
               </div>
               <!-- Music Player -->
               <div class="playme-music-player">
