@@ -32,11 +32,17 @@
 
 
         <!-- Single Welcome Slide -->
-        <div class="welcome-welcome-slide bg-img bg-overlay" style="background-image: url(img/bg-img/3.jpg);">
+
             <div class="login-box middle">
+            <div id="loginloader">
+                <div class="loginloader-thumbnail">
+                <img src="./img/core-img/preloader.png" alt="">
+                </div>
+            </div>
             <div class="register">
 			<h1>Register</h1>
-			<form action="php/register_auth.php" method="post" autocomplete="off">
+      <div class='login-error' id='login-error'></div>
+			<form action="php/register_auth.php" method="post" autocomplete="off" id="register-bs">
 				<label for="username">
 					<i class="fas fa-user"></i>
 				</label>
@@ -50,7 +56,7 @@
 				</label>
 				<input type="email" name="email" placeholder="Email" id="email" required>
 
-				<input type="text" name="permissions" placeholder="Permissions Level" id="permissions" required>
+
 				<input type="submit" value="Register">
 				
 			</form>
@@ -58,13 +64,12 @@
 		</div>
             
 
-        </div>
-
         
 
         </div>
 </body>
 <!-- jQuery js -->
+
 <script src="js/jquery.min.js"></script>
   <!-- Popper js -->
   <script src="js/popper.min.js"></script>
@@ -73,4 +78,5 @@
   <!-- All js -->
   <script src="js/playme.bundle.js"></script>
   <!-- Active js -->
+  <script src="js/login-ajax.js"></script>
   <script src="js/default-assets/active.js"></script>

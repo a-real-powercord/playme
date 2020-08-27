@@ -39,7 +39,7 @@
 
 
         <!-- Single Welcome Slide -->
-        <div class="background-image">
+        <div class="background-image" style="background-image: url(img/bg-img/3.jpg);">
             <div class="login-box middle">
             <div class="login">
             <div id="loginloader">

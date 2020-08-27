@@ -14,6 +14,13 @@ if (mysqli_connect_errno()) {
 }
 
 ?>
+
+<?php
+    session_start();
+    if(!isset($_SESSION['name']) || $_SESSION['id'] != 1){
+        header('location: index.php');
+    }
+?>
 <head>
   <meta charset="UTF-8">
   <meta name="description" content="PlayMe">
@@ -99,7 +106,7 @@ if (mysqli_connect_errno()) {
             <div class="grid-child"><h2 class='heading' data-type="player"></h2><a class="" aria-hidden="true"></a></div>
             <div class="grid-child"><h2 class='heading' data-type="username">NAME <i class="fa fa-angle-down name-down" style="font-size:24px"></i></h2></div>
             <div class="grid-child"><h2 class='heading' data-type="password">EMAIL <i class="fa fa-angle-down artist-down" style="font-size:24px"></i></h2></div>
-            <div class="grid-child"><h2 class='heading' data-type="genre">EDIT <i class="fa fa-angle-down" style="font-size:24px"></i></h2></div>
+            <div class="grid-child"><h2 class='heading' data-type="edit">EDIT <i class="fa fa-angle-down" style="font-size:24px"></i></h2></div>
         </div>
         <div id="container">
     <?php
@@ -117,8 +124,13 @@ if (mysqli_connect_errno()) {
                     </div>
                     <div class="grid-child grid-items"><?php echo $username ?></div>
                     <div class="grid-child grid-items"><?php echo $email ?></div>
-                    <div class="grid-child grid-items"><button>Delete</button></div>
-                
+                    <?php if($_SESSION['name'] == $username){?>
+                    <div class="grid-child grid-items"></div>
+                    <?php } 
+                    else{
+                    ?>
+                    <div class="grid-child grid-items"><button class='delete-button' data-type="<?php echo $username ?>">Delete</button></div>
+                    <?php } ?>
   </div>
 
     <?php
