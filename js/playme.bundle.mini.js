@@ -243,3 +243,21 @@ function searchDiv() {
         
     })
 })
+
+
+function total_duration() {
+    audio_elements = document.getElementsByClassName('listen');
+    added_duration = 0
+    for(i=0; i<audio_elements.length; i++){
+        single_duration = audio_elements[i].duration
+        if(!(single_duration > 0)){
+            setTimeout(()=>{total_duration()}, 100)
+            return
+
+        }
+        added_duration += single_duration
+        console.log(i)
+        console.log(added_duration)
+    }
+
+}

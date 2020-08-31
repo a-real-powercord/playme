@@ -143,7 +143,7 @@
                 <div class="grid-parent data-parent grid-color" data-player = "<?php echo $directory ?>" data-title="<?php echo $song_name?>" data-artist="<?php echo $artist?>" data-genre="<?php echo $genre?>">
                     <div class="grid-child grid-before">
                         <div class="mediPlayer">
-                            <audio class="listen" preload="none" data-size="50" src="<?php echo $directory?>"></audio>
+                            <audio class="listen" preload="metadata" data-size="50" src="<?php echo $directory?>"></audio>
                         </div>
                     </div>
                     <div class="grid-child grid-items"><?php echo $song_name ?></div>
@@ -151,6 +151,7 @@
                     <div class="grid-child grid-items"><?php echo $genre ?></div>
                 
                 </div>
+                
 
     <?php
     
@@ -251,8 +252,11 @@
     <script>
         $(document).ready(function () {
             $('.mediPlayer').mediaPlayer();
+            total_duration()
         });
     </script>
+
+    
     
 </body>
 
